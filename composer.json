@@ -1,0 +1,21 @@
+{
+    "name": "tangtanglove/quark-laravel",
+    "description": "laravel admin",
+    "keywords": [
+        "quark-laravel",
+        "laravel",
+        "laravel-admin",
+        "sdk"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tangtanglove",
+            "email": "dai_hang_love@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-fileinfo": "*"
+    }
+}
