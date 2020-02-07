@@ -1,6 +1,6 @@
 <?php
 
-namespace QuarkLaravel;
+namespace QuarkAdmin;
 
 use Illuminate\Support\ServiceProvider;
 

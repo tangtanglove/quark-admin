@@ -1,6 +1,6 @@
 <?php
 
-namespace QuarkLaravel\Form;
+namespace QuarkAdmin\Form;
 
 use Exception;
 

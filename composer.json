@@ -1,8 +1,8 @@
 {
-    "name": "tangtanglove/quark-laravel",
+    "name": "tangtanglove/quark-admin",
     "description": "laravel admin",
     "keywords": [
-        "quark-laravel",
+        "quark-admin",
         "laravel",
         "laravel-admin",
         "sdk"

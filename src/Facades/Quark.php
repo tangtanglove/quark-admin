@@ -1,6 +1,6 @@
 <?php
 
-namespace QuarkLaravel\Facades;
+namespace QuarkAdmin\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
