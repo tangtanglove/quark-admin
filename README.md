@@ -1,1 +1,1 @@
-quark-laravel
+quark-admin
