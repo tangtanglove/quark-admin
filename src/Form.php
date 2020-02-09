@@ -1,12 +1,20 @@
 <?php
 
-namespace QuarkLaravel;
+namespace QuarkAdmin;
 
 use Illuminate\Support\Arr;
 use Illuminate\Database\Eloquent\Model;
 
 class Form
 {
+    public $component;
+
+    public $layout;
+
+    public $action;
+
+    public $items;
+
     /**
      * Available fields.
      *
@@ -25,6 +33,35 @@ class Form
     public function __construct()
     {
         $this->component = 'form';
+        $layout['labelCol']['span'] = 3;
+        $layout['wrapperCol']['span'] = 21;
+        $this->layout = $layout;
+    }
+
+    /**
+     * form layout.
+     *
+     * @param string $url
+     *
+     * @return bool|mixed
+     */
+    public function layout($layout)
+    {
+        $this->layout = $layout;
+        return $this;
+    }
+
+    /**
+     * form action.
+     *
+     * @param string $url
+     *
+     * @return bool|mixed
+     */
+    public function setAction($url)
+    {
+        $this->action = $url;
+        return $this;
     }
 
     /**
@@ -47,9 +84,10 @@ class Form
 
     public function __call($method, $arguments) {
         if ($className = static::findFieldClass($method)) {
-            $column = Arr::get($arguments, 0, ''); //[0];
 
+            $column = Arr::get($arguments, 0, ''); //[0];
             $element = new $className($column, array_slice($arguments, 1));
+            $this->items[] = $element;
 
             return $element;
         }

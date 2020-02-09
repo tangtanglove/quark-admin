@@ -2,6 +2,7 @@
 
 namespace QuarkAdmin\Form;
 
+use QuarkAdmin\Form;
 use Exception;
 
 class Item
@@ -49,7 +50,7 @@ class Item
     /**
      * 配合 label 属性使用，表示是否显示 label 后面的冒号
      *
-     * @param  bool $show
+     * @param  bool $fileds
      * @return $this
      */
     public function dependencies($fileds)
@@ -103,6 +104,18 @@ class Item
         }
 
         $this->help = $help;
+        return $this;
+    }
+
+    /**
+     * 控件样式
+     *
+     * @param  array $style
+     * @return $this
+     */
+    public function style($style = [])
+    {
+        $this->style = $style;
         return $this;
     }
 

@@ -203,4 +203,17 @@ class Input extends Item
         $allowClear ? $this->allowClear = true : $this->allowClear = false;
         return $this;
     }
+
+    /**
+     * 输入框宽度
+     * 
+     * @param  number|string $value
+     * @return object
+     */
+    public function width($value = '100%')
+    {
+        $style['width'] = $value;
+        $this->style = $style;
+        return $this;
+    }
 }
