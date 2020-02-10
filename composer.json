@@ -18,6 +18,11 @@
         "php": ">=7.1",
         "ext-fileinfo": "*"
     },
+    "autoload": {
+        "psr-4": {
+            "Tangtanglove\\QuarkAdmin\\": "src"
+        }
+    },
     "extra": {
         "laravel": {
             "aliases": {
