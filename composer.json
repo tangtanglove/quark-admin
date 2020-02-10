@@ -21,10 +21,10 @@
     "extra": {
         "laravel": {
             "aliases": {
-                "Quark": "QuarkAdmin\\Facades\\Quark"
+                "Tangtanglove\\Quark": "Tangtanglove\\QuarkAdmin\\Facades\\Quark"
             },
             "providers": [
-                "QuarkAdmin\\QuarkServiceProvider"
+                "Tangtanglove\\QuarkAdmin\\QuarkServiceProvider"
             ]
         }
     }

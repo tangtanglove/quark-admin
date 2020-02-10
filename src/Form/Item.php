@@ -1,8 +1,8 @@
 <?php
 
-namespace QuarkAdmin\Form;
+namespace Tangtanglove\QuarkAdmin\Form;
 
-use QuarkAdmin\Form;
+use Tangtanglove\QuarkAdmin\Form;
 use Exception;
 
 class Item
