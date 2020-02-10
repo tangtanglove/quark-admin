@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "aliases": {
-                "Tangtanglove\\Quark": "Tangtanglove\\QuarkAdmin\\Facades\\Quark"
+                "Quark": "Tangtanglove\\QuarkAdmin\\Facades\\Quark"
             },
             "providers": [
                 "Tangtanglove\\QuarkAdmin\\QuarkServiceProvider"
